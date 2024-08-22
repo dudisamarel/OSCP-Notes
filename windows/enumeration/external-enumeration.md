@@ -35,7 +35,7 @@ nxc smb <target_subnet>
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>smb - hosts enumeration</p></figcaption></figure>
 
 {% hint style="info" %}
-Note: DC smb signing as true by default.
+Note: DC smb signing is true by default.
 {% endhint %}
 
 ## Service and Port Scanning
@@ -99,7 +99,7 @@ nxc smb <target> -u 'guest' -p '' --shares
 Enumerate valid users:
 
 {% hint style="info" %}
-Note: when using anonymously not blank and blank username can make a difference.
+Note: blank and not blank usernames can make a difference even when login anonymously.
 {% endhint %}
 
 ```bash
@@ -131,8 +131,16 @@ nxc smb <target> -u '' -p '' --pass-pol
 
 ## Users Enumeration
 
+### NXC
+
 ```bash
 nxc smb <target> -u <userlist_file> -p <pass> --continue-on-success
+```
+
+### Kerbrute
+
+```
+kerbrute userenum <userlist_file> -d <domain_name> --dc <dc_ip>
 ```
 
 ## References
