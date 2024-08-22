@@ -17,11 +17,11 @@ Ready to conquer OSCP! 🚀
 
 ### GitHub
 
-[https://github.com/dudisamarel/oscp-notes](https://github.com/dudisamarel/crtp-notes)
+[https://github.com/dudisamarel/oscp-notes](https://github.com/dudisamarel/oscp-notes)
 
 ### Gitbook
 
-[https://dudisamarel.gitbook.io/oscp-notes/](https://dudisamarel.gitbook.io/crtp-notes/)
+[https://dudisamarel.gitbook.io/oscp-notes](https://dudisamarel.gitbook.io/oscp-notes/)
 
 ***
 
