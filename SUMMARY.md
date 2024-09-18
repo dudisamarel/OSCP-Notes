@@ -10,6 +10,7 @@
 * [Basic attacks](windows/basic-attacks/README.md)
   * [AS-REP Roasting](windows/basic-attacks/as-rep-roasting.md)
   * [Password Spray](windows/basic-attacks/password-spray.md)
+* [Client Side](windows/client-side.md)
 
 ## Web attacks
 
