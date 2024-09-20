@@ -2,8 +2,6 @@
 
 External enumeration involves gathering information about Windows systems from outside the network. Techniques like SMB probing, Nmap scanning, and DNS zone transfers help identify active hosts, exposed services, and potential vulnerabilities before gaining internal access.
 
-
-
 ## Network Discovery
 
 Identify live hosts and gather basic network information to map out the target environment.
@@ -67,6 +65,14 @@ rpcclient -U "" <target>
 ## Active Directory Reconnaissance
 
 Gather detailed information about Active Directory environments, including users, groups, and policies.
+
+### Find DCs
+
+```bash
+nslookup -type=srv _kerberos._tcp.dc._msdcs.<domain> <target_ip>
+```
+
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ### Enum4linux
 

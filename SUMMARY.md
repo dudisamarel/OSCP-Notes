@@ -22,3 +22,18 @@
 * [Reverse Shells](web-attacks/reverse-shells.md)
 * [Cross Site Scripting (XSS)](web-attacks/cross-site-scripting-xss.md)
 * [File Upload](web-attacks/file-upload.md)
+
+***
+
+* [🔍 Information Gathering](information-gathering/README.md)
+  * [Passive Reconnaissance](information-gathering/passive-reconnaissance/README.md)
+    * [Whois](information-gathering/passive-reconnaissance/whois.md)
+    * [Google Dorks](information-gathering/passive-reconnaissance/google-dorks.md)
+    * [NetCraft](information-gathering/passive-reconnaissance/netcraft.md)
+    * [Git Repository](information-gathering/passive-reconnaissance/git-repository.md)
+  * [Active Reconnaissance](information-gathering/active-reconnaissance/README.md)
+    * [DNS Enumeration](information-gathering/active-reconnaissance/dns-enumeration.md)
+    * [Host Discovery](information-gathering/active-reconnaissance/host-discovery.md)
+    * [Port scanning](information-gathering/active-reconnaissance/port-scanning.md)
+    * [SMTP - 25](information-gathering/active-reconnaissance/smtp-25.md)
+    * [SNMP](information-gathering/active-reconnaissance/snmp.md)

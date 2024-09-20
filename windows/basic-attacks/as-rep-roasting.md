@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # AS-REP Roasting
 
 **AS-REP Roasting** targets Active Directory accounts without Kerberos pre-authentication.
