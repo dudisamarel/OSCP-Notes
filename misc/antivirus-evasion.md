@@ -1,8 +1,22 @@
-# Antivirus Evasion
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
+# 🦠 Antivirus Evasion
 
 ## Antivirus detection methodologies
 
-AV relies on multiple methods in order to detect malwares:
+AV relies on multiple methods in order to detect malwares.
 
 ### Signature-based Detection
 
@@ -23,7 +37,7 @@ Machine Learning detection uses algorithms trained on vast amounts of data to id
 
 ## Antivirus evasion methodologies
 
-There are multiple ways to bypass AVs detections which usually used combined:
+There are multiple ways to bypass AVs detections which usually used combined.
 
 ### **Obfuscators**
 
@@ -97,4 +111,13 @@ Shellter provides interactive mode and easy to operate.
 sudo apt install shellter
 ```
 
+## References
+
+{% embed url="https://www.virustotal.com/gui/" %}
+VirusTotal
+{% endembed %}
+
 {% embed url="https://www.kali.org/tools/shellter/" %}
+Shellter
+{% endembed %}
+
