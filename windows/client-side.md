@@ -7,12 +7,12 @@ Steps to reproduce the doc macros attack using vba script
 1. Create new file using **Microsoft Word**.
 2.  Create a new macro - View > Macros:
 
-    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 
 3. Give the macro name > Select **Macros in document** > Click on Create:
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 4. Write the Macro script within the payload:
 

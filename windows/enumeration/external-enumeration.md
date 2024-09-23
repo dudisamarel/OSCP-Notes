@@ -30,7 +30,7 @@ Enumerating `smb` hosts:
 nxc smb <target_subnet>
 ```
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>smb - hosts enumeration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>smb - hosts enumeration</p></figcaption></figure>
 
 {% hint style="info" %}
 Note: DC smb signing is true by default.
@@ -72,7 +72,7 @@ Gather detailed information about Active Directory environments, including users
 nslookup -type=srv _kerberos._tcp.dc._msdcs.<domain> <target_ip>
 ```
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ### Enum4linux
 

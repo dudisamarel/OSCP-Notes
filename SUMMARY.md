@@ -4,7 +4,7 @@
 
 ## 💡 Misc
 
-* [🦠 Antivirus Evasion](antivirus-evasion.md)
+* [🦠 Antivirus Evasion](misc/antivirus-evasion.md)
 * [🐈‍⬛ Password attacks](misc/password-attacks.md)
 * [NTLM](misc/ntlm.md)
 

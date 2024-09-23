@@ -98,7 +98,7 @@ hashcat -m 13400 keepass.hash ~/wordlists/rockyou.txt
 hash-identifier
 ```
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>hash-identifier</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>hash-identifier</p></figcaption></figure>
 
 ### Hashid
 
@@ -106,7 +106,7 @@ hash-identifier
 hashid <hash>
 ```
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>hashid</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>hashid</p></figcaption></figure>
 
 ## Wordlists
 
