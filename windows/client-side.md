@@ -50,7 +50,7 @@ Libraries are virtual containers for users' content.
 
 This attack leverage **.Library-ms** file which will connect to attacker controlled WebDAV and be sent to a victim. Once the victim opens the file, he will think the WebDAV is a local windows folder. Then in the next stage the victim will click a malicious **.lnk** file using the WebDAV.&#x20;
 
-
+***
 
 First creating the **.Library-ms** file:&#x20;
 
@@ -88,8 +88,6 @@ First creating the **.Library-ms** file:&#x20;
 * **`<isSupported>`**: used for compatibility.
 * **`<simpleLocation>`**: Specifies the search connector’s location in a simplified format.
 * **`<url>`**: Points to the URL of the **attacker's WebDAV server**.
-
-
 
 Serving the WebDAV Server including malicious files such `.lnk` file that runs PowerShell.
 

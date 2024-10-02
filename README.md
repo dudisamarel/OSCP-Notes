@@ -1,5 +1,9 @@
 # 🐲 OSCP Notes
 
+{% hint style="danger" %}
+!! The Project is ONGOING and CHANGES over time !!
+{% endhint %}
+
 This book is a collection of notes and tips that I have gathered during my studies for the Offensive Security Certified Professional (PEN-200) exam.\
 \
 It is designed to help me **understand** and **remember** the key concepts covered in the exam, and I plan to use it as my main cheat sheet during the test.\

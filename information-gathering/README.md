@@ -7,14 +7,17 @@ layout:
   tableOfContents:
     visible: true
   outline:
-    visible: true
+    visible: false
   pagination:
-    visible: true
+    visible: false
 ---
 
 # 🔍 Information Gathering
 
-###
+{% content-ref url="passive-reconnaissance/" %}
+[passive-reconnaissance](passive-reconnaissance/)
+{% endcontent-ref %}
 
-
-
+{% content-ref url="active-reconnaissance/" %}
+[active-reconnaissance](active-reconnaissance/)
+{% endcontent-ref %}

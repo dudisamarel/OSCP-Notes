@@ -7,6 +7,7 @@
 * [🦠 Antivirus Evasion](misc/antivirus-evasion.md)
 * [🐈‍⬛ Password attacks](misc/password-attacks.md)
 * [NTLM](misc/ntlm.md)
+* [🐚 Reverse Shells](misc/reverse-shells.md)
 
 ***
 
@@ -29,6 +30,12 @@
 * [Enumeration](windows/enumeration/README.md)
   * [External Enumeration](windows/enumeration/external-enumeration.md)
   * [Internal Enumeration](windows/enumeration/internal-enumeration.md)
+* [Local Privilege Escalation](windows/local-privilege-escalation/README.md)
+  * [Service Binary Hijacking](windows/local-privilege-escalation/service-binary-hijacking.md)
+  * [Service DLL Hijacking](windows/local-privilege-escalation/service-dll-hijacking.md)
+  * [Unquoted Service Paths](windows/local-privilege-escalation/unquoted-service-paths.md)
+  * [Scheduled Tasks](windows/local-privilege-escalation/scheduled-tasks.md)
+  * [Token impersonation](windows/local-privilege-escalation/token-impersonation.md)
 * [Basic attacks](windows/basic-attacks/README.md)
   * [AS-REP Roasting](windows/basic-attacks/as-rep-roasting.md)
   * [Password Spray](windows/basic-attacks/password-spray.md)
@@ -41,6 +48,5 @@
 * [Directory Traversal](web-attacks/directory-traversal.md)
 * [Local File Inclusion (LFI)](web-attacks/local-file-inclusion-lfi.md)
 * [Remote File Inclusion (RFI)](web-attacks/remote-file-inclusion-rfi.md)
-* [Reverse Shells](web-attacks/reverse-shells.md)
 * [Cross Site Scripting (XSS)](web-attacks/cross-site-scripting-xss.md)
 * [File Upload](web-attacks/file-upload.md)

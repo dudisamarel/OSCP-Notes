@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # External Enumeration
 
 External enumeration involves gathering information about Windows systems from outside the network. Techniques like SMB probing, Nmap scanning, and DNS zone transfers help identify active hosts, exposed services, and potential vulnerabilities before gaining internal access.
