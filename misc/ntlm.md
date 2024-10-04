@@ -1,7 +1,3 @@
----
-icon: windows
----
-
 # NTLM
 
 ## Introduction
