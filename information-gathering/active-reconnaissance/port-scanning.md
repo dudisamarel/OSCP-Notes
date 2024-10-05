@@ -20,8 +20,16 @@ layout:
 
 Scanning for open ports using Live of the land (LOTL) technique:
 
+Windows
+
 ```powershell
 1..1024 | % {echo ((New-Object Net.Sockets.TcpClient).Connect("192.168.50.151", $_)) "TCP port $_ is open"} 2>$null
+```
+
+Linux
+
+```bash
+for i in $(seq 1 254); do nc -zv -w 1 172.16.50.$i 445; done
 ```
 
 Scans using `nmap`:

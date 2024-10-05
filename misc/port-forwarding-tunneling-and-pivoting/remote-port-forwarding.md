@@ -18,7 +18,7 @@ Remote forwarding allows you to forward a port on the SSH server to a port on yo
 
 ## SSH
 
-<img src="../../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (4).svg" alt="" class="gitbook-drawing">
 
 {% code overflow="wrap" %}
 ```bash

@@ -30,7 +30,7 @@ socat -ddd TCP-LISTEN:<local_port>,fork TCP:<remote_ip>:<remote_port>
 
 ## SSH
 
-<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (5).svg" alt="" class="gitbook-drawing">
 
 {% code overflow="wrap" %}
 ```bash
