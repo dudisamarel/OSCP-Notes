@@ -26,6 +26,7 @@
 
 ## Linux
 
+* [Local Enumeration](linux/local-enumeration.md)
 * [Local Privileges Escalation](linux/local-privileges-escalation/README.md)
   * [Scheduled tasks](linux/local-privileges-escalation/scheduled-tasks.md)
   * [Password Authentication](linux/local-privileges-escalation/password-authentication.md)
@@ -39,6 +40,8 @@
 * [Mindmap](https://orange-cyberdefense.github.io/ocd-mindmaps/img/pentest\_ad\_dark\_2022\_11.svg)
 * [Enumeration](windows/enumeration/README.md)
   * [External Enumeration](windows/enumeration/external-enumeration.md)
+  * [Local Enumeration](windows/enumeration/local-enumeration.md)
+  * [Active Directory](windows/enumeration/active-directory.md)
 * [NTLM](misc/ntlm.md)
 * [Local Privilege Escalation](windows/local-privilege-escalation/README.md)
   * [Service Binary Hijacking](windows/local-privilege-escalation/service-binary-hijacking.md)
