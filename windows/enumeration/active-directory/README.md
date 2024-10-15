@@ -106,6 +106,22 @@ Enumerate specific domain group membership
 LDAPSearch -LDAPQuery "(memberOf=CN=<group_name>,OU=Groups,DC=domain,DC=com)"
 ```
 
+## SPN
+
+lists all the Service Principal Names (SPNs) that are registered for the specified user account in Active Directory.
+
+```batch
+setspn -L <user>
+```
+
+## Active Sessions
+
+Shows users logged onto the specific computer using the [`PsLoggedon`](https://learn.microsoft.com/en-us/sysinternals/downloads/psloggedon) tool from sysinternals.
+
+```batch
+.\PsLoggedon.exe \<computer>
+```
+
 ## Domain Controller
 
 Retrieve the Domain Controller with the **`PdcRoleOwner`** which indicates its the main DC.
@@ -114,5 +130,11 @@ Retrieve the Domain Controller with the **`PdcRoleOwner`** which indicates its t
 [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()
 ```
 
+## PowerView
 
+**PowerView** is a PowerShell toolset for AD enumeration, useful for penetration testing. It helps gather domain info, user/group details, inspect permissions, and identify network shares. Commonly used in Active Directory enumeration.
+
+{% content-ref url="powerview.md" %}
+[powerview.md](powerview.md)
+{% endcontent-ref %}
 
