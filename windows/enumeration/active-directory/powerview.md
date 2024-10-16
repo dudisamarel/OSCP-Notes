@@ -47,7 +47,7 @@ Get-NetGroup | select cn
 Retrieves members of a specific group (e.g., Domain Admins).
 
 ```powershell
- Get-NetGroup "<group_name>" | select -ExpandProperty member
+Get-NetGroup "<group_name>" | select -ExpandProperty member
 ```
 
 ## Computers
@@ -105,6 +105,22 @@ Filtering the output in order to display the important information.
 {% code overflow="wrap" %}
 ```powershell
 Get-ObjectAcl -Identity "<target_object>" | select SecurityIdentifier,ActiveDirectoryRights
+```
+{% endcode %}
+
+
+
+{% code overflow="wrap" %}
+```powershell
+Get-DomainObjectAcl -ResolveGUIDs -Identity "<target_object>" | ? {$_.SecurityIdentifier -eq (Convert-NameToSid "<controlled_object>")}
+```
+{% endcode %}
+
+Search for interesting ACEs&#x20;
+
+{% code overflow="wrap" %}
+```powershell
+Find-InterestingDomainAcl -ResolveGUIDs | ?{$_.IdentityReferenceName -match "<controlled_object>"}
 ```
 {% endcode %}
 

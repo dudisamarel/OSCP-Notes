@@ -8,11 +8,11 @@ description: >-
 
 Enumerate Services
 
-Using `Get-CimInstance` with PowerShell to list running services:
+Using `Get-CimInstance` with PowerShell to list running services and filter built in services:
 
 {% code overflow="wrap" %}
 ```powershell
-Get-CimInstance -ClassName win32_service | Select Name,State,PathName | Where-Object {$_.State -like 'Running'}
+Get-CimInstance -ClassName win32_service | Select Name,State,PathName | Where-Object {$_.State -like 'Running' -and $_.PathName -notlike "C:\Windows\system32*"}
 ```
 {% endcode %}
 
@@ -86,12 +86,14 @@ Checking the Service Permissions:
 sc sdshow <service_name>
 ```
 
+### Manual restart
+
 Trying to restart the service:
 
 {% tabs %}
 {% tab title="Batch" %}
 ```batch
-net <service_name>
+net stop <service_name>
 net start <service_name>
 ```
 {% endtab %}
@@ -103,6 +105,8 @@ Start-Service <Service_name>
 ```
 {% endtab %}
 {% endtabs %}
+
+### Automatic restart
 
 If restarting the service is not allowed, trying the another method as described above:
 

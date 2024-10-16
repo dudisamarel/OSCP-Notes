@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Local Enumeration
 
 Username and hostname.
@@ -19,6 +33,7 @@ Existing users and groups.
 {% tab title="PowerShell" %}
 ```powershell
 Get-LocalUser
+Get-LocalUser <user_name>
 Get-LocalGroup
 Get-LocalGroupMember <group_name>
 ```
@@ -27,6 +42,9 @@ Get-LocalGroupMember <group_name>
 {% tab title="Batch" %}
 ```batch
 net user
+net user <user_name>
+net localgroup 
+net localgroup <group_name>
 ```
 {% endtab %}
 {% endtabs %}
@@ -66,21 +84,28 @@ Search for files.
 {% code overflow="wrap" %}
 ```powershell
 Get-ChildItem -Path C:\ -Include *.kdbx -File -Recurse -ErrorAction SilentlyContinue
-Get-ChildItem -Path C:\xampp -Include *.bin *.txt -File -Recurse -ErrorAction SilentlyContinue
-Get-ChildItem -Path C:\Users -Include *.txt -File -Recurse -ErrorAction SilentlyContinue
 ```
 {% endcode %}
 
+```powershell
+Get-ChildItem -Path C:\xampp -Include *.bin *.txt -File -Recurse -ErrorAction SilentlyContinue
+```
+
+```powershell
+Get-ChildItem -Path C:\Users -Include *.txt -File -Force -Recurse -ErrorAction SilentlyContinue
+```
+
 PowerShell history.
 
-```
-Get-History
-(Get-PSReadlineOption).HistorySavePath
+```powershell
+Get-History # Get History Commands
+
+(Get-PSReadlineOption).HistorySavePath # Get History File Path
 ```
 
 PowerShell history event logs.
 
-```
+```powershell
 Get-WinEvent Microsoft-Windows-PowerShell/Operational | Where-Object Id -eq 4104 | ForEach-Object { $_.Message } | findstr "dave*"
 ```
 

@@ -50,6 +50,7 @@
   * [Unquoted Service Paths](windows/local-privilege-escalation/unquoted-service-paths.md)
   * [Scheduled Tasks](windows/local-privilege-escalation/scheduled-tasks.md)
   * [Token impersonation](windows/local-privilege-escalation/token-impersonation.md)
+  * [Backup Operators Group](windows/local-privilege-escalation/backup-operators-group.md)
 * [Basic attacks](windows/basic-attacks/README.md)
   * [AS-REP Roasting](windows/basic-attacks/as-rep-roasting.md)
   * [Password Spray](windows/basic-attacks/password-spray.md)
