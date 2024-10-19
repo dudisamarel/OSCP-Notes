@@ -37,4 +37,4 @@ impacket-secretsdump -sam sam.backup -system system.backup LOCAL
 
 ### 4. Pass The Hash
 
-[#pass-the-hash](../../misc/ntlm.md#pass-the-hash "mention")
+[#pass-the-hash](../ntlm-hashes.md#pass-the-hash "mention")

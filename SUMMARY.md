@@ -43,7 +43,7 @@
   * [Local Enumeration](windows/enumeration/local-enumeration.md)
   * [Active Directory](windows/enumeration/active-directory/README.md)
     * [PowerView](windows/enumeration/active-directory/powerview.md)
-* [NTLM](misc/ntlm.md)
+* [NTLM Hashes](windows/ntlm-hashes.md)
 * [Local Privilege Escalation](windows/local-privilege-escalation/README.md)
   * [Service Binary Hijacking](windows/local-privilege-escalation/service-binary-hijacking.md)
   * [Service DLL Hijacking](windows/local-privilege-escalation/service-dll-hijacking.md)
@@ -55,6 +55,8 @@
   * [AS-REP Roasting](windows/basic-attacks/as-rep-roasting.md)
   * [Password Spray](windows/basic-attacks/password-spray.md)
 * [Client Side](windows/client-side.md)
+* [NTLM Authentication](windows/ntlm-authentication.md)
+* [Kerberos Authentication](windows/kerberos-authentication.md)
 
 ## Web attacks
 
