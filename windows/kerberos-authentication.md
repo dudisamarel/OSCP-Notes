@@ -18,8 +18,7 @@ layout:
 
 ### **AS-REQ**
 
-The client sends a request with its **username** and **timestamp** which usually encrypted with **client key**.\
-The client key derived from the password of the user and their username.&#x20;
+* The client sends a request with its **username** and **timestamp** which usually encrypted with the **client key**. The **client key** derived from the password of the user and their username.&#x20;
 
 ***
 
@@ -73,4 +72,4 @@ The client finally contacts the **Application Server**, sending:
 
 The application server decrypts the Service ticket and verifies the username matches the one in the encrypted Service Ticket.
 
-if the verification was successful, the application server replies with a timestamp encrypted the **service session key**.
+* if the verification was successful, the application server replies with a timestamp encrypted the **service session key**.

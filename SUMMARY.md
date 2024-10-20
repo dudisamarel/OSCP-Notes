@@ -57,6 +57,7 @@
 * [Client Side](windows/client-side.md)
 * [NTLM Authentication](windows/ntlm-authentication.md)
 * [Kerberos Authentication](windows/kerberos-authentication.md)
+* [Cached Credentials](windows/cached-credentials.md)
 
 ## Web attacks
 
