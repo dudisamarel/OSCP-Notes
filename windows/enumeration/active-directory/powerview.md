@@ -50,6 +50,12 @@ Retrieves members of a specific group (e.g., Domain Admins).
 Get-NetGroup "<group_name>" | select -ExpandProperty member
 ```
 
+Enumerating accounts with Kerberos pre-authentication disabled from inside the network.
+
+```powershell
+Get-DomainUser -PreauthNotRequired -Verbose
+```
+
 ## Computers
 
 Retrieves a list of all computers in the domain.

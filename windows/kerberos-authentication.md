@@ -18,7 +18,7 @@ layout:
 
 ### **AS-REQ**
 
-* The client sends a request with its **username** and **timestamp** which usually encrypted with the **client key**. The **client key** derived from the password of the user and their username.&#x20;
+* The client sends a request with its **username** and **timestamp** which are encrypted by default due to **Pre-Authentication**. This encryption uses the **client key**, which is derived from the user's password and username.
 
 ***
 
