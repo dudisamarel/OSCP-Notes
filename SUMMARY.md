@@ -55,6 +55,7 @@
   * [WMI and WinRM](windows/lateral-movement/wmi-and-winrm.md)
   * [PsExec](windows/lateral-movement/psexec.md)
   * [Pass The Hash](windows/lateral-movement/pass-the-hash.md)
+  * [Overpass The Hash](windows/lateral-movement/overpass-the-hash.md)
   * [Pass The Ticket](windows/lateral-movement/pass-the-ticket.md)
   * [DCOM](windows/lateral-movement/dcom.md)
 * [Authentication Attacks](windows/authentication-attacks/README.md)
