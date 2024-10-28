@@ -37,7 +37,8 @@
 
 ## Windows
 
-* [Mindmap](https://orange-cyberdefense.github.io/ocd-mindmaps/img/pentest\_ad\_dark\_2022\_11.svg)
+* [🧠 Mindmap](https://orange-cyberdefense.github.io/ocd-mindmaps/img/pentest\_ad\_dark\_2022\_11.svg)
+* [🥝 Mimikatz Basics](windows/mimikatz-basics.md)
 * [Enumeration](windows/enumeration/README.md)
   * [External Enumeration](windows/enumeration/external-enumeration.md)
   * [Local Enumeration](windows/enumeration/local-enumeration.md)
