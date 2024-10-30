@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# 🦠 Antivirus Evasion
+# Antivirus Evasion
 
 ## Antivirus detection methodologies
 

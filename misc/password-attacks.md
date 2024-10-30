@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# 🐈‍⬛ Password attacks
+# Password attacks
 
 ## Online Brute force
 

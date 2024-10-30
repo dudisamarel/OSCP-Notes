@@ -4,9 +4,10 @@
 
 ## 💡 Misc
 
-* [🦠 Antivirus Evasion](misc/antivirus-evasion.md)
-* [🐈‍⬛ Password attacks](misc/password-attacks.md)
-* [🐚 Reverse Shells](misc/reverse-shells.md)
+* [Metasploit](misc/metasploit.md)
+* [Antivirus Evasion](misc/antivirus-evasion.md)
+* [Password attacks](misc/password-attacks.md)
+* [Reverse Shells](misc/reverse-shells.md)
 * [⏩ Port Forwarding, Tunneling and Pivoting](misc/port-forwarding-tunneling-and-pivoting/README.md)
   * [Local Port Forwarding](misc/port-forwarding-tunneling-and-pivoting/local-port-forwarding.md)
   * [Remote Port Forwarding](misc/port-forwarding-tunneling-and-pivoting/remote-port-forwarding.md)
