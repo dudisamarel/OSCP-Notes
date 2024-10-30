@@ -67,14 +67,28 @@ getuid
 
 ### Network
 
+port fowarding
+
+```
+portfwd add -l <lport> -p <port> -r <rhost>
+```
+
+add route to the routing table
+
+```
+route add <subnet>/24 <session_id>
+```
+
+
+
+more useful commands
+
 {% code overflow="wrap" %}
 ```batch
 arp # Display the host ARP cache
 getproxy # Display the current proxy configuration
 ifconfig # Display interfaces ipconfig Display interfaces netstat Display the network connections 
-portfwd # Forward a local port to a remote service 
 resolve # Resolve a set of host names on the target 
-route # View and modify the routing table
 ```
 {% endcode %}
 
@@ -99,6 +113,26 @@ upload <local_path> <target_path>
 ```batch
 channels -l # listing channels
 channels -i <channel_id> # use other channel
+```
+
+## Meterpeter Post Exploitation
+
+How long the system is in idle which indicates if it's in use.
+
+```batch
+idletime
+```
+
+Elevate to system using [token-impersonation.md](../windows/local-privilege-escalation/token-impersonation.md "mention") methods automatically.
+
+```batch
+getsystem
+```
+
+migrating meterpeter process to other process.
+
+```batch
+migrate <dest_pid>
 ```
 
 ## MSFVenom
