@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# ⏩ Port Forwarding, Tunneling and Pivoting
+# Port Forwarding, Tunneling and Pivoting
 
 ## **Tunneling**
 

@@ -12,7 +12,7 @@ layout:
     visible: false
 ---
 
-# 🔍 Information Gathering
+# Information Gathering
 
 {% content-ref url="passive-reconnaissance/" %}
 [passive-reconnaissance](passive-reconnaissance/)

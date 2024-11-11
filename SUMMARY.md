@@ -1,19 +1,19 @@
 # Table of contents
 
 * [🐲 OSCP Notes](README.md)
+* [🐲 OSCP Methodology](oscp-methodology.md)
 
 ## 💡 Misc
 
-* [Page](misc/page.md)
 * [Metasploit](misc/metasploit.md)
 * [Antivirus Evasion](misc/antivirus-evasion.md)
 * [Password attacks](misc/password-attacks.md)
 * [Reverse Shells](misc/reverse-shells.md)
-* [⏩ Port Forwarding, Tunneling and Pivoting](misc/port-forwarding-tunneling-and-pivoting/README.md)
+* [Port Forwarding, Tunneling and Pivoting](misc/port-forwarding-tunneling-and-pivoting/README.md)
   * [Local Port Forwarding](misc/port-forwarding-tunneling-and-pivoting/local-port-forwarding.md)
   * [Remote Port Forwarding](misc/port-forwarding-tunneling-and-pivoting/remote-port-forwarding.md)
   * [Dynamic Port Forwarding](misc/port-forwarding-tunneling-and-pivoting/dynamic-port-forwarding.md)
-* [🔍 Information Gathering](information-gathering/README.md)
+* [Information Gathering](information-gathering/README.md)
   * [Passive Reconnaissance](information-gathering/passive-reconnaissance/README.md)
     * [Whois](information-gathering/passive-reconnaissance/whois.md)
     * [Google Dorks](information-gathering/passive-reconnaissance/google-dorks.md)
