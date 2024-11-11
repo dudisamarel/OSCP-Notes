@@ -4,6 +4,7 @@
 
 ## 💡 Misc
 
+* [Page](misc/page.md)
 * [Metasploit](misc/metasploit.md)
 * [Antivirus Evasion](misc/antivirus-evasion.md)
 * [Password attacks](misc/password-attacks.md)

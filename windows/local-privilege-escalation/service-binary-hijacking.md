@@ -6,7 +6,9 @@ description: >-
 
 # Service Binary Hijacking
 
-Enumerate Services
+## Enumerate Services
+
+### PowerShell cmdlet
 
 Using `Get-CimInstance` with PowerShell to list running services and filter built in services:
 
@@ -20,6 +22,19 @@ Get-CimInstance -ClassName win32_service | Select Name,State,PathName | Where-Ob
 When running **`Get-CimInstance`** and **`Get-Service`** via **WinRM** or a **bind shell** will result in a "Access denied" error when querying for services with a **non-administrative user**. \
 Using an interactive logon such as **RDP** solves this problem.
 {% endhint %}
+
+### **Registry**
+
+The following **one-liner command** was taken from [evil-winrm](https://github.com/Hackplayers/evil-winrm/blob/master/evil-winrm.rb) source code and uses the registry to enumerate services.
+
+**Note: this is very useful when using low privileged user.**
+
+{% code overflow="wrap" %}
+```powershell
+$servicios = Get-ItemProperty "registry::HKLM\System\CurrentControlSet\Services\*" | Where-Object {$_.imagepath -notmatch "system" -and $_.imagepath -ne $null } | Select-Object pschildname,imagepath  ; foreach ($servicio in $servicios  ) {Get-Service $servicio.PSChildName -ErrorAction SilentlyContinue | Out-Null ; if ($? -eq $true) {$privs = $true} else {$privs = $false} ; $Servicios_object = New-Object psobject -Property @{"Service" = $servicio.pschildname ; "Path" = $servicio.imagepath ; "Privileges" = $privs} ;  $Servicios_object
+}
+```
+{% endcode %}
 
 ## **Enumerate Binary Permissions**
 
