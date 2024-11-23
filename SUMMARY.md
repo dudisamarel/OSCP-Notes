@@ -13,6 +13,7 @@
   * [Local Port Forwarding](misc/port-forwarding-tunneling-and-pivoting/local-port-forwarding.md)
   * [Remote Port Forwarding](misc/port-forwarding-tunneling-and-pivoting/remote-port-forwarding.md)
   * [Dynamic Port Forwarding](misc/port-forwarding-tunneling-and-pivoting/dynamic-port-forwarding.md)
+  * [Lingolo-ng](misc/port-forwarding-tunneling-and-pivoting/lingolo-ng.md)
 * [Information Gathering](information-gathering/README.md)
   * [Passive Reconnaissance](information-gathering/passive-reconnaissance/README.md)
     * [Whois](information-gathering/passive-reconnaissance/whois.md)
@@ -39,7 +40,7 @@
 
 ## Windows
 
-* [🧠 Mindmap](https://orange-cyberdefense.github.io/ocd-mindmaps/img/pentest\_ad\_dark\_2022\_11.svg)
+* [🧠 Mindmap](https://orange-cyberdefense.github.io/ocd-mindmaps/img/pentest_ad_dark_2022_11.svg)
 * [🥝 Mimikatz Basics](windows/mimikatz-basics.md)
 * [Enumeration](windows/enumeration/README.md)
   * [External Enumeration](windows/enumeration/external-enumeration.md)
